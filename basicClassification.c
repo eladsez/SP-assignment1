@@ -18,7 +18,7 @@ int isPrime(int x){
 
 // help function for isStrong function
 int factorial(int x){
-  if (x == 1)
+  if (x == 1 || x == 0)
     return 1;
   else
       return (x * factorial(x-1));
@@ -34,7 +34,8 @@ int isStrong(int x){
     xCopy /= 10;
   }
   if (sum == x) return TRUE;
-  else return FALSE;
+  else
+   return FALSE;
 }
 
 // int main(){
