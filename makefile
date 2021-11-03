@@ -16,13 +16,13 @@ loops: basicClassification.o advancedClassificationLoop.o
 	ar -rcs libclassloops.a basicClassification.o advancedClassificationLoop.o
 
 loopd: basicClassification.o advancedClassificationLoop.o
-	gcc -shared basicClassification.o advancedClassificationLoop.o -o libclassloops.so -lm
+	gcc -Wall -g -shared basicClassification.o advancedClassificationLoop.o -o libclassloops.so -lm
 
 recursives: basicClassification.o advancedClassificationRecursion.o
 	ar -rcs libclassrec.a basicClassification.o advancedClassificationRecursion.o
 
 recursived: basicClassification.o advancedClassificationRecursion.o
-	gcc -shared basicClassification.o advancedClassificationRecursion.o -o libclassrec.so
+	gcc -Wall -g -shared basicClassification.o advancedClassificationRecursion.o -o libclassrec.so
 
 # for the object files
 basicClassification.o: basicClassification.c

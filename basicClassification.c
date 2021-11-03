@@ -4,7 +4,7 @@
 #define FALSE 0
 
 int isPrime(int x){
-  if (x == 2 || x == 3)
+  if (x == 2 || x == 3 || x == 1)
     return TRUE;
   if (x % 2 == 0 || x % 3 == 0 || x <= 1)
     return FALSE;
