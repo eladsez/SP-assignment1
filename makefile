@@ -1,7 +1,7 @@
 
 .PHONY: clean all
 
-all: maindrec mains maindloop loops
+all: maindrec mains maindloop loops loopd recursived recursives
 
 mains: recursives main.o
 	gcc -Wall -g -o mains main.o libclassrec.a -lm
